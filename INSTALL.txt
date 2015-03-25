@@ -1,0 +1,56 @@
+References:
+https://github.com/DjangoGirls/tutorial/tree/master/en/python_installation
+
+Mac OS X Set Up
+
+1. Install Python 3.4.2
+   Download from https://www.python.org/downloads/release/python-343/
+   Open the installer
+   Verify Installation:
+       $ python3 --version
+       Python 3.4.3
+
+2. Install/Upgrade IDLE and tkinter
+   Download from https://www.python.org/download/mac/tcltk/
+   Open the installer
+
+3. Setup a virtualenv
+   mkdir djangogirls
+   cd djangogirls
+   python3 -m venv myvenv
+   source myvenv/bin/activate
+
+4. Instal Django 1.7.7
+   pip3 install django==1.7.7
+       Collecting django==1.7.7
+         Downloading Django-1.7.7-py2.py3-none-any.whl (7.4MB)
+           100% |################################| 7.4MB 50kB/s 
+       Installing collected packages: django
+       Successfully installed django-1.7.7
+
+5. Verify Django installation
+   - run python3 and you should get this:
+       $ python3
+       Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 23 2015, 02:52:03) 
+       [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+       Type "help", "copyright", "credits" or "license" for more information.
+       >>> import django
+       >>> print (django.get_version())
+       1.7.7
+       >>> ^D
+
+       Alternatively:
+       $ python3 -c "import django; print(django.get_version())"
+       1.7.7
+
+   - Later, to upgrade to latest version:
+       $ pip3 install -U Django
+
+9. Start a project
+   - django-admin.py startproject firstproject
+   - cd firstproject (project directory)
+   - python3 manage.py runserver 0.0.0.0:8000
+   If you now point your browser at http://localhost:8000/
+   you should get the "It Worked!" page.
+
+Now, you can go on to the DjangGirls Tutorial!
