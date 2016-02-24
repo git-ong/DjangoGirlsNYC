@@ -3,7 +3,7 @@ https://github.com/DjangoGirls/tutorial/tree/master/en/python_installation
 
 Mac OS X Set Up
 
-1. Install Python 3.4.2
+1. Install Python 3.4.3
    Download from https://www.python.org/downloads/release/python-343/
    Open the installer
    Verify Installation:
